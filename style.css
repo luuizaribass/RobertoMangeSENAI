@@ -52,10 +52,10 @@ nav {
     display: flex;
 }
 
-.titu p {
+.titulos p {
     font-size: 30px;
     text-align: center;
-    margin: 85px 0px;
+    margin: 70px 0px;
 }
 
 
@@ -66,11 +66,6 @@ nav {
     padding-top: 70px;
     background-color: #E10613;
     height: 436px;
-}
-
-.banner img {
-    width: 25%;
-    margin-left: 100px;
 }
 
 .bannerText {
@@ -340,6 +335,14 @@ main section .caixas .caixa:hover {
     /* height: 450px; */
 }
 
+.caixaRM {
+    box-shadow: 0px 4px 5px 3px rgba(61, 61, 61, 0.75);
+    background-color: #fff;
+    border-radius: 5%;
+    max-width: 250px;
+    text-align: center;
+}
+
 .data p {
     color: white;
     font-weight: 500;
@@ -358,17 +361,6 @@ main section .caixas .caixa:hover {
 }
 
 
-.caixaRM {
-    box-shadow: 0px 4px 5px 3px rgba(61, 61, 61, 0.75);
-    background-color: #fff;
-    border-radius: 5%;
-    /* padding: 40px 45px; */
-    max-width: 250px;
-    text-align: center;
-    /* margin-left: 60px;
-    margin-right: 60px; */
-    height: 265px;
-}
 
 
 .caixaConteudoRM {
@@ -446,7 +438,6 @@ main section .caixas .caixa:hover {
 }
 
 #reconhece .homem {
-    width: 300px;
     max-width: 100%;
     flex-shrink: 0;
 }
@@ -591,10 +582,7 @@ footer .tudo .topo .redes a {
     }
 
     /* fim menu reponsivo */
-    .banner img {
-        display: none;
-    }
-
+    
     /* .caixas {
         flex-direction: row;
         justify-content: space-around;
@@ -651,8 +639,8 @@ footer .tudo .topo .redes a {
     }
 
     #reconhece .titulo {
-        font-size: 20px;
-        padding: 20px 0;
+        font-size: 25px;
+    
     }
 
     #reconhece .homem {
@@ -676,7 +664,9 @@ footer .tudo .topo .redes a {
 }
 
 .caixaRM {
-    width: 80%;
+    width: 200px;
+    height: 290px;
+    max-width: 250px;
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #ccc;
@@ -685,6 +675,8 @@ footer .tudo .topo .redes a {
     align-items: center;
     position: relative;
 }
+
+
 
 .caixaRM .ano {
     font-size: 18px;
@@ -703,7 +695,7 @@ footer .tudo .topo .redes a {
 }
 
 .caixaRM .caixaImgRM {
-    width: 80px;
+    width: 150px;
     height: auto;
     border-radius: 50%;
     /* Para imagens redondas */
@@ -723,26 +715,11 @@ footer .tudo .topo .redes a {
     font-size: 14px;
 }
 
-.caixaRM:after {
-    content: '';
-    display: block;
-    width: calc(100% - 20px);
-    /* Largura da linha menos o padding */
-    height: 1px;
-    background-color: #ccc;
-    margin-top: 10px;
-    /* Espaço acima da linha */
-    margin-bottom: 10px;
-    /* Espaço abaixo da linha */
-}
+
 
 
 .banner {
     flex-direction: column;
-}
-
-.banner img {
-    display: none;
 }
 
 .bannerText {
@@ -755,10 +732,10 @@ footer .tudo .topo .redes a {
         max-width: 60%;
     } */
 
-.Gustavo {
-    width: 83%;
-    margin-right: 15px;
-}
+    /* .Gustavo {
+        width: 30vh;
+        margin-right: 15px;
+    } */
 
 .ano {
     margin-top: 20px;

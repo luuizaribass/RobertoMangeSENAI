@@ -81,9 +81,9 @@ nav {
     color: #fff;
 }
 
-/*fim do banner Roberto Mange*/
+/* /fim do banner Roberto Mange/ */
 
-/*Roberto Mange*/
+/* /Roberto Mange/ */
 
 
 .caixas {
@@ -339,6 +339,7 @@ main section .caixas .caixa:hover {
     /* padding: 100px 0 30px; */
     /* height: 450px; */
 }
+
 .data p {
     color: white;
     font-weight: 500;
@@ -399,7 +400,7 @@ main section .caixas .caixa:hover {
 .caixaRQ {
     display: flex;
     align-items: center;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .caixasRQ {
@@ -421,38 +422,34 @@ main section .caixas .caixa:hover {
 /* reconhecimento*/
 
 #reconhece {
-    margin-left: 120px;
-    margin-right: 120px;
+    margin: 0 120px 50px 120px;
     display: flex;
     justify-content: space-between;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
 #reconhece .grupo {
     display: flex;
-
     flex-direction: column;
     justify-content: center;
-    width: 800px;
+    max-width: 800px;
+    flex: 1;
     text-align: justify;
 }
 
-#reconhece .grupo .titulo {
-
+#reconhece .titulo {
     font-size: 35px;
     padding-bottom: 50px;
     color: #FE3838;
     font-weight: 700;
-    padding-bottom: 100px;
     text-align: center;
-
-
 }
 
 #reconhece .homem {
     width: 300px;
+    max-width: 100%;
+    flex-shrink: 0;
 }
-
 
 
 
@@ -562,6 +559,7 @@ footer .tudo .topo .redes a {
 /* fim footer*/
 
 @media (max-width: 850px) {
+
     /* menu reponsivo */
     nav {
         display: none;
@@ -572,27 +570,32 @@ footer .tudo .topo .redes a {
         top: 60px;
         left: 0;
     }
+
     nav a {
         padding: 10px;
         border-top: 1px solid #444;
     }
+
     nav a:first-child {
         border-top: none;
     }
-    header .menu-icon{
+
+    header .menu-icon {
         display: block;
         margin-right: 10px;
     }
+
     header .logo {
         width: 70px;
-        margin-left:10px;
+        margin-left: 10px;
     }
+
     /* fim menu reponsivo */
     .banner img {
         display: none;
     }
 
-   /* .caixas {
+    /* .caixas {
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -636,18 +639,13 @@ footer .tudo .topo .redes a {
     }
 
     #reconhece {
+        margin: 20px 30px;
         flex-direction: column;
-        width: 100%;
-        margin: 20px 0;
-        padding: 0 10px;
-        margin-left: 30px;
-        margin-right: 30px;
-        text-align: justify;
+        align-items: center;
     }
 
     #reconhece .grupo {
         width: 100%;
-        text-align: center;
         margin: 20px 0;
         text-align: justify;
     }
@@ -655,175 +653,172 @@ footer .tudo .topo .redes a {
     #reconhece .titulo {
         font-size: 20px;
         padding: 20px 0;
-        color: #FE3838;
-        font-weight: 700;
     }
 
     #reconhece .homem {
-        max-width: 100%;
         margin: 20px 0;
     }
+}
 
-    #requisitos {
-        margin-left: 30px;
-        margin-right: 30px;
-    }
-
-
-    .caixasRM {
-        display: flex;
-        flex-direction: column;
-        /* Coloca uma caixa abaixo da outra */
-        align-items: center;
-        /* Centraliza as caixas */
-        width: 100%;
-    }
-
-    .caixaRM {
-        width: 80%;
-        margin-bottom: 20px;
-        padding: 10px;
-        border: 1px solid #ccc;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-    }
-
-    .caixaRM .ano {
-        font-size: 18px;
-        margin-bottom: 10px;
-        /* Espaço entre o ano e o conteúdo */
-        background-color: white;
-        padding: 5px 10px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        text-align: center;
-        width: 60px;
-        margin-top: -20px;
-        /* Ajuste para centralizar o texto */
-        z-index: 10;
-        /* Garante que o ano fique acima do conteúdo */
-    }
-
-    .caixaRM .caixaImgRM {
-        width: 80px;
-        height: auto;
-        border-radius: 50%;
-        /* Para imagens redondas */
-        margin-bottom: 10px;
-    }
-
-    .caixaRM .caixaConteudoRM {
-        text-align: center;
-        width: 100%;
-    }
-
-    .caixaRM .caixaConteudoRM h3 {
-        margin-top: 0;
-    }
-
-    .caixaRM .caixaConteudoRM p {
-        font-size: 14px;
-    }
-
-    .caixaRM:after {
-        content: '';
-        display: block;
-        width: calc(100% - 20px);
-        /* Largura da linha menos o padding */
-        height: 1px;
-        background-color: #ccc;
-        margin-top: 10px;
-        /* Espaço acima da linha */
-        margin-bottom: 10px;
-        /* Espaço abaixo da linha */
-    }
+#requisitos {
+    margin-left: 30px;
+    margin-right: 30px;
+}
 
 
-    .banner {
-        flex-direction: column;
-    }
+.caixasRM {
+    display: flex;
+    flex-direction: column;
+    /* Coloca uma caixa abaixo da outra */
+    align-items: center;
+    /* Centraliza as caixas */
+    width: 100%;
+}
 
-    .banner img {
-        display: none;
-    }
+.caixaRM {
+    width: 80%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
 
-    .bannerText {
-        margin: 0 30px;
-    }
+.caixaRM .ano {
+    font-size: 18px;
+    margin-bottom: 10px;
+    /* Espaço entre o ano e o conteúdo */
+    background-color: white;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    width: 60px;
+    margin-top: -20px;
+    /* Ajuste para centralizar o texto */
+    z-index: 10;
+    /* Garante que o ano fique acima do conteúdo */
+}
+
+.caixaRM .caixaImgRM {
+    width: 80px;
+    height: auto;
+    border-radius: 50%;
+    /* Para imagens redondas */
+    margin-bottom: 10px;
+}
+
+.caixaRM .caixaConteudoRM {
+    text-align: center;
+    width: 100%;
+}
+
+.caixaRM .caixaConteudoRM h3 {
+    margin-top: 0;
+}
+
+.caixaRM .caixaConteudoRM p {
+    font-size: 14px;
+}
+
+.caixaRM:after {
+    content: '';
+    display: block;
+    width: calc(100% - 20px);
+    /* Largura da linha menos o padding */
+    height: 1px;
+    background-color: #ccc;
+    margin-top: 10px;
+    /* Espaço acima da linha */
+    margin-bottom: 10px;
+    /* Espaço abaixo da linha */
+}
 
 
-    /* .caixaRM {
+.banner {
+    flex-direction: column;
+}
+
+.banner img {
+    display: none;
+}
+
+.bannerText {
+    margin: 0 30px;
+}
+
+
+/* .caixaRM {
         margin: 20px 0;
         max-width: 60%;
     } */
 
-    .Gustavo {
-        width: 83%;
-        margin-right: 15px;
-    }
+.Gustavo {
+    width: 83%;
+    margin-right: 15px;
+}
 
-    .ano {
-        margin-top: 20px;
-    }
+.ano {
+    margin-top: 20px;
+}
 
-    /* .content-container{
+/* .content-container{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
 
     } */
-     #trajetoria {
-        padding: 0 20px;
-    }
+#trajetoria {
+    padding: 0 20px;
+}
 
-    .content-container {
-        flex-direction: column;
-        align-items: center;
-    }
+.content-container {
+    flex-direction: column;
+    align-items: center;
+}
 
-    .content-container img {
-        width: 100%;
-        max-width: 300px;
-    }
+.content-container img {
+    width: 100%;
+    max-width: 300px;
+}
 
-    #slider {
-        margin: 20px auto;
+#slider {
+    margin: 20px auto;
 
-    }
+}
 
-    #slides {
-        padding: 0 30px;
-        padding-bottom: 100px;
-        margin-top: -10px;
-        width: 250px;
-        height: 280px;
-    }
+#slides {
+    padding: 0 30px;
+    padding-bottom: 100px;
+    margin-top: -10px;
+    width: 250px;
+    height: 110px;
+}
 
-    .slide-content {
-        height: 100px;
-        /* padding-bottom: 190px; */
-    }
+.slide-content {
+    height: 100px;
+    /* padding-bottom: 190px; */
+}
 
-    #slides .inner {
-        height: 300px;
-        /* width: 200px; */
-    }
-    #slides .slide {
-        width: 25%;
-        /* float: left; */
-        /* display: block; */
-        height: 380px;
-        /* color: #fff; */
-    }
-    #controls {
-        margin: -40px 0 0 0;
-    }
+#slides .inner {
+    height: 300px;
+    /* width: 200px; */
+}
 
-    #controls label {
-        display: inline-block;
-    }
+#slides .slide {
+    width: 25%;
+    /* float: left; */
+    /* display: block; */
+    height: 380px;
+    /* color: #fff; */
+}
 
-    
+#controls {
+    margin: -40px 0 0 0;
+}
+
+#controls label {
+    display: inline-block;
 }
